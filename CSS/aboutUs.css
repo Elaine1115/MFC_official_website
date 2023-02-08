@@ -197,7 +197,7 @@ footer {
   width: 500px;
 }
 
-.cartoon video{
+.cartoon iframe{
   margin-left: 20px;
   margin-top: 50px;
   margin-right: 10px;
@@ -331,7 +331,7 @@ hr {
   .content{width:90%;flex-wrap: wrap;}
   .content .text{width: 1000px; margin: 40px 100px 0px 100px;}
   .cartoon{width: 1000px;margin: 20px 100px 0px 100px;text-align: center;}
-  .cartoon video{width: 800px; height: 400px; }
+  .cartoon iframe{width: 800px; height: 400px; }
 } 
 
 
@@ -343,7 +343,7 @@ hr {
 @media only screen and (max-width: 1050px){
   .logo{padding-left: 30px;font-size: 30px;}
   .cartoon{width: 800px; margin:0px 55px;}
-  .cartoon video{width: 750px; height: 380px; }
+  .cartoon iframe{width: 750px; height: 380px; }
 }
 
 
@@ -356,7 +356,7 @@ hr {
   #check:checked ~ ul{ left:0;}
   .content .text{font-size: 20px;}
   .cartoon{width: 700px; margin:0px 60px;}
-  .cartoon video{width: 700px; height: 350px; margin-left: 5px;}
+  .cartoon iframe{width: 700px; height: 350px; margin-left: 5px;}
 }
 
 
@@ -366,7 +366,7 @@ hr {
 
 @media only screen and (max-width: 900px) {
   .cartoon{width: 680px;}
-  .cartoon video{width: 600px; height: 300px; margin-left: 5px;}
+  .cartoon iframe{width: 600px; height: 300px; margin-left: 5px;}
 }  
 
 @media only screen and (max-width: 880px){
@@ -375,7 +375,7 @@ hr {
 
 @media only screen and (max-width: 800px){
   .cartoon{width: 600px;}
-  .cartoon video{width: 500px; height: 320px; margin-left: 5px;}
+  .cartoon iframe{width: 500px; height: 320px; margin-left: 5px;}
 }
 
 @media only screen and (max-width: 740px){
@@ -386,11 +386,11 @@ hr {
 @media only screen and (max-width: 700px){
   .content{width: 100%;}
   .cartoon{width: 520px; margin:0px 85px;}
-  .cartoon video{width: 450px; height: 350px; margin-left: 5px;margin-top: 5px;}
+  .cartoon iframe{width: 450px; height: 350px; margin-left: 5px;margin-top: 5px;}
 }
 
 @media only screen and (max-width: 615px){
-  .cartoon video{width: 400px;}
+  .cartoon iframe{width: 400px;}
   footer{font-size: 13px;}
 } 
 

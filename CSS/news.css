@@ -223,9 +223,9 @@ footer {
   font-size: 14px;
 }
 
-.cartoon{
+.cartoon iframe{
   width: 450px;
-  margin-top: -50px;
+  margin-top: 0px;
   margin-left:20px;
   padding:0px 0px;
   text-align: center;
@@ -362,7 +362,7 @@ hr {
   .container .read-more-container{width:700px; margin-left:150px;}
   .container .read-more-container ul{width:650px; margin-left: 20px;}
   .cartoon{width: 650px; margin:10px 200px;}
-  .cartoon video{width: 550px;}
+  .cartoon iframe{width: 550px;}
 } 
 
 
@@ -423,7 +423,7 @@ hr {
   .container .read-more-container ul{width:500px;}
   .container .read-more-container ul li{font-size: 16px;}
   .cartoon{margin:10px 10px;}
-  .cartoon video{width: 500px;}
+  .cartoon iframe{width: 500px;}
   footer{font-size: 13px;}
 } 
 
