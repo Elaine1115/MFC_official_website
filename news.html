@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>豪板-最新消息</title>
+    <link rel="stylesheet" href="news.css">
+    <link rel="icon" href="../img/HAUBOARD.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/news.css">
+    <script src="../JS/nav.js"></script>
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html"><label class="logo">HAU BOARD</label></a>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./aboutSupplier.html">供應商簡介</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">產品介紹
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./woodgrain.html">木紋系列</a>
+                        <a href="./texture.html">材質系列</a>
+                        <a href="./marmo.html">大理石系列</a>
+                        <a href="./plain.html">素色系列</a>
+                    </div>
+                </div>
+                <li><a href="./quality.html">品質標準</a></li>
+                <li><a href="./question.html">常見問題</a></li>
+                <li><a href="./contactUs.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <br>
+    <br>
+    <br>
+
+    <section>
+        <div class="image-container">
+            <div class="picture_text">NEWS</div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="read-more-container">
+                <ul>
+                    <li class="article">
+                        <p id="time01"></p>2022新品搶先報～獨家引進歐洲最新抗指紋、耐磨耐刮、耐髒抗菌技術
+                        <span class="read-more-text">產品，如需樣品請洽公司業務！</span>
+                        <span class="read-more-btn">Read More...</span>
+                    </li>
+                    <li class="article">
+                        <p id="time02"></p>[花色下架通知]37M原切枯木年底即將汰換，庫存用罄下架，敬請見諒！
+                    </li>
+                    <li class="article">
+                        <p id="time03"></p>[中秋連假通知]因應中秋佳節來臨，9/9(五）~9/11（日）暫停服務
+                    </li>
+                    <li class="article">
+                        <p id="time04"></p>胡桃3D表面花色發表，歡迎向各區經銷商索取型錄～
+                    </li>
+                    <li class="article">
+                        <p id="time05"></p>[漲價通知]全球原物料、運價飆漲，我司為反應物料成本，將適當調整
+                        <span class="read-more-text">部分產品售價，調漲幅度和施行時程將另外通知各位客戶，實屬無奈，敬請體諒！</span>
+                        <span class="read-more-btn">Read More...</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cartoon">
+                <video controls width="450px" height="380px">
+                    <source src="../Video/newtrailer.mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <a href="https://www.facebook.com/HauBoard1/"><img src="../img/fb.png" id="facebook"></a>
+    </div>
+
+
+    <!-- 預約 -->
+    <button id="resBtn" onclick="document.getElementById('reserve').style.display='block'"
+        style="width:auto;">預約參觀</button>
+
+
+    <div id="reserve" class="modal-formBox">
+
+        <form class="modal-form" action="#">
+
+            <div class="content-form">
+                <button class="closeForm" onclick="document.getElementById('reserve').style.display='none'">&times;</button>
+                <h2 style="text-align:center">預約參觀</h2>
+                <p style="text-align:center">請填寫以下預約資訊</p>
+                <hr>
+                <label for="resName"><b>姓名<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="resName" placeholder="您的大名" name="resName" required>
+
+                <label for="mobile"><b>電話<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="mobile" placeholder="您的電話" name="mobile" required>
+
+                <br>
+                <label for="people"><b>參觀人數</b></label>
+                <br>
+                <select name="people" id="people">
+                    <option value="one">1位</option>
+                    <option value="two">2位</option>
+                    <option value="three">3位</option>
+                    <option value="four">4位</option>
+                    <option value="five">5位</option>
+                </select>
+                <br>
+                <br>
+                <label for="date"><b>預約日期<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <br>
+
+                <label for="time"><b>預約時段(目前開放時段為09:00~16:00)<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="radio" class="time" name="time[]" value="0" required>09:00
+                <input type="radio" class="time" name="time[]" value="1" required>10:00
+                <input type="radio" class="time" name="time[]" value="2" required>11:00
+                <input type="radio" class="time" name="time[]" value="3" required>13:00
+                <input type="radio" class="time" name="time[]" value="4" required>14:00
+                <input type="radio" class="time" name="time[]" value="5" required>15:00
+                <input type="radio" class="time" name="time[]" value="6" required>16:00
+
+                <br>
+                <br>
+                <p><b>如有特殊需求，請來電告知，謝謝!</b></p>
+                <p>
+                    <spam style="color:red">* </spam>號為必填欄位
+                </p>
+                <br>
+                <div class="clearfix">
+                    <button onclick="success()" type="submit" class="reservebtn">確認預約</button>
+                    <button type="button" onclick="document.getElementById('reserve').style.display='none'"
+                        class="cancelbtn">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>豪板實業有限公司</p>
+        <p>台中市大雅區大林路181號</p>
+        <p>TEL 04-25654955</p>
+        <p>@2022 HAU BOARD. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        const parentContainer = document.querySelector('.read-more-container');
+
+        parentContainer.addEventListener("click", event => {
+            const current = event.target;
+
+            const isReadMoreBtn = current.className.includes('read-more-btn');
+
+            if (!isReadMoreBtn) return;
+
+            const currentText = event.target.parentNode.querySelector('.read-more-text');
+
+            currentText.classList.toggle('read-more-text--show');
+
+            current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+        })
+
+
+        var time01 = new Date("2022/10/01");
+        var y = time01.getFullYear();
+        var m = time01.getMonth() + 1;
+        var d = time01.getDate();
+
+        document.getElementById("time01").innerText = `${y}/${m}/0${d}`;
+
+
+        var time02 = new Date("2022/09/15");
+        var y = time02.getFullYear();
+        var m = time02.getMonth() + 1;
+        var d = time02.getDate();
+
+        document.getElementById("time02").innerText = `${y}/0${m}/${d}`;
+
+        var time03 = new Date("2022/07/9");
+        var y = time03.getFullYear();
+        var m = time03.getMonth() + 1;
+        var d = time03.getDate();
+
+        document.getElementById("time03").innerText = `${y}/0${m}/0${d}`;
+
+        var time04 = new Date("2022/06/28");
+        var y = time04.getFullYear();
+        var m = time04.getMonth() + 1;
+        var d = time04.getDate();
+
+        document.getElementById("time04").innerText = `${y}/0${m}/${d}`;
+
+        var time05 = new Date("2022/06/11");
+        var y = time05.getFullYear();
+        var m = time05.getMonth() + 1;
+        var d = time05.getDate();
+
+        document.getElementById("time05").innerText = `${y}/0${m}/${d}`;
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function success() {
+
+            var check = $("input[name='time[]']:checked").length;
+
+            var checkDate = $("#date").value;
+
+            if (resName.value != "" && mobile.value != "" && check != 0 && checkDate != "") {
+                alert("預約成功!");
+                return false;
+            }
+        }
+        
+        var today = new Date();
+        var dd = today.getDate()+1;
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+
+    </script>
+
+
+
+
+</body>
+
+</html>

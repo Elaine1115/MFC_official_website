@@ -1,0 +1,364 @@
+*{
+  padding:0;
+  margin:0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+header{
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+
+nav{
+  background-color: rgb(50, 48, 48);
+  height: 80px;
+  margin: auto;
+}
+
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  cursor: pointer;
+}
+
+.logo:hover{
+  color:lightgray;
+  transition: .2s;
+}
+
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-decoration: none !important;
+}
+
+a.active, a:hover{
+  color:red;
+  transition: .5s;
+}
+
+.dropdown{
+  display: inline;
+  padding:30px 5px;
+}
+
+.dropdown .dropbtn{
+  font-size: 17px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: transparent;
+  cursor:auto;
+  margin: 0;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 5px;
+  top:76px;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  font-size: 16px;
+  float: none;
+  color: white;
+  background-color:  rgb(87, 84, 84);
+  padding: 16px 18px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.dropdown-content a:hover {
+  color: red;
+  transition: .5s;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color:white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+
+
+/* 頁尾  */
+footer {
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  background-color:rgb(50, 48, 48);
+  padding:10px;
+  color:whitesmoke;
+} 
+
+hr{
+  border: 1px solid rgb(103, 101, 101);
+}
+
+.connection{
+  width:1000px;
+  margin:auto;
+}
+
+.connection img{
+  width: 400px;
+  height: 280px;
+}
+
+
+.connection div{
+  text-align: center;
+  position: relative;
+}
+
+.desc{
+  font-size: 22px;
+  width: 90%;
+  background-color:white;
+  position: absolute;
+  bottom:20px;
+  left:25px;
+  visibility:hidden;
+}
+
+.connection div:hover>.desc{
+  visibility: visible;
+} 
+
+#facebook{
+  width: 80px;
+  height: 80px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+} 
+
+#facebook:hover{
+  opacity: 0.8;
+}
+
+/* Full-width input fields */
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus{
+  background-color: #ddd;
+  outline: none;
+}
+
+
+input[type=radio]{
+  margin:5px 10px;
+}
+
+#people{
+  margin: 5px 5px;
+  width:20%;
+}
+
+#date{
+  margin:5px 5px;
+  width:40%;
+}
+
+#resBtn {
+  background-color: #04AA6D;
+  color: white;
+  font-size:18px;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 5%;
+  border:none;
+  cursor: pointer;
+  width: 100%;
+  position: fixed;
+  right:20px;
+  bottom:120px;
+}
+
+#resBtn:hover {
+  opacity:0.8;
+}
+
+
+.cancelbtn, .reservebtn { 
+  margin-left:40px; 
+  margin-bottom:10px;
+  width:40%;
+  padding:5px 10px;
+}
+
+.cancelbtn:hover, .reservebtn:hover{
+  opacity: 0.8;
+}
+
+
+.content-form {
+  padding: 16px;
+  font-size: 18px;
+}
+
+/* The Modal (background) */
+.modal-formBox{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100000; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-form {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+.closeForm{
+  float:right;
+  background-color: transparent;
+  border:none;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.closeForm:hover{
+  opacity: 0.8;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media only screen and (max-width: 1250px){
+  .logo{padding-right:  60px;}
+  nav ul{margin-right: 10px;}
+  nav ul li{margin:0 2px;}
+  nav ul li a{padding:7px 8px;}
+} 
+
+
+ @media only screen and (max-width: 1200px) {
+  .logo{padding-right:50px}
+  .connection{width: 950px;}
+} 
+
+
+@media only screen and (max-width: 1080px) {
+  .logo{padding:0 30px 0 40px; font-size: 33px;}
+  .connection{width: 900px;}
+  .desc{font-size: 20px;}
+}
+
+@media only screen and (max-width: 1000px){
+  .logo{padding-left: 30px;font-size: 30px;}
+}
+
+
+@media only screen and (max-width: 990px) {
+  .connection{width:800px;}
+  .connection img{width: 350px;height: 245px;}
+} 
+
+
+@media (max-width:955px){
+  .checkbtn{ display: block;}
+  ul{ position: fixed; width: 100%; height: 100vh; background: #454748; top: 80px; left: -100%; z-index: 9999;
+     text-align: center; transition: all .5s;}
+  nav ul li{ display: block; margin:40px 0; line-height: 20px;}
+  nav ul li { font-size:20px;}
+  #check:checked ~ ul{ left:0;}
+}
+
+
+@media only screen and (max-width: 810px) {
+  .connection{width:600px; flex-wrap: wrap;}
+  .connection div{margin:30px;}
+  .connection img{width: 500px;height: 350px;}
+  .sepCon{display: none;}
+  .desc{font-size: 26px;width:100%;bottom:25px;left:2px;}
+}  
+
+
+@media only screen and (max-width: 615px){
+  .connection{width:500px;}
+  .connection img{width:400px; height: 280px;}
+  .desc{font-size: 22px;}
+  footer{font-size: 13px;}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+

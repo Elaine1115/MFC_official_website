@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>豪板-關於豪板</title>
+    <link rel="icon" href="../img/HAUBOARD.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/aboutUs.css">
+    <script src="../JS/nav.js"></script>
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html"><label class="logo">HAU BOARD</label></a>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./aboutSupplier.html">供應商簡介</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">產品介紹
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./woodgrain.html">木紋系列</a>
+                        <a href="./texture.html">材質系列</a>
+                        <a href="./marmo.html">大理石系列</a>
+                        <a href="./plain.html">素色系列</a>
+                    </div>
+                </div>
+                <li><a href="./quality.html">品質標準</a></li>
+                <li><a href="./question.html">常見問題</a></li>
+                <li><a href="./contactUs.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-- 內容 -->
+    <section>
+        <div class="image-container">
+            <div class="picture_text">ABOUT</div>
+        </div>
+
+        <div class="content">
+
+            <div class="text">
+                <h3>關於豪板</h3>
+                <p>
+                    近來因社會變遷快速，各產業成長迅速，導致地球資源逐漸匱乏，永續資源利用的做法不斷被提倡，以減少對自然環境的傷害。對消費者而言，傳統實木家具講究質感、富有風味，但同時也有許多人因應環保意識發展的趨勢，選擇以再生木材生產的系統家具。2003年成立的豪板，至今已超過15年，豪板因
+                    秉持對環保建材的堅持，使我們不斷茁壯成長，與此同時，我們亦積極跟上流行時尚的腳步，推出符合大眾需求及風格的產品。
+                </p>
+                <br>
+                <p>
+                    豪板目前為義大利Gruppo Mauro Saviola的台灣總代理，產品為歐洲原裝進口的系統家具專用板材，台灣獨家販售，並具有歐盟IDROLEB、日本JIS F****、台灣SGS認證標準，採用對
+                    人體無毒的低甲醛、防潮、防焰的環保板材。
+                </p>
+            </div>
+
+            <div class="cartoon">
+                <video controls width="480px" height="350px">
+                    <source src="../Video/ENG-MFC製程動畫.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+
+
+
+
+    </section>
+
+    <div>
+        <a href="https://www.facebook.com/HauBoard1/"><img src="../img/fb.png" id="facebook"></a>
+    </div>
+
+    <!-- 預約 -->
+    <button id="resBtn" onclick="document.getElementById('reserve').style.display='block'"
+        style="width:auto;">預約參觀</button>
+
+
+    <div id="reserve" class="modal-formBox">
+
+        <form class="modal-form" action="#">
+
+            <div class="content-form">
+                <button class="closeForm" onclick="document.getElementById('reserve').style.display='none'">&times;</button>
+                <h2 style="text-align:center">預約參觀</h2>
+                <p style="text-align:center">請填寫以下預約資訊</p>
+                <hr>
+                <label for="resName"><b>姓名<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="resName" placeholder="您的大名" name="resName" required>
+
+                <label for="mobile"><b>電話<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="mobile" placeholder="您的電話" name="mobile" required>
+
+                <br>
+                <label for="people"><b>參觀人數</b></label>
+                <br>
+                <select name="people" id="people">
+                    <option value="one">1位</option>
+                    <option value="two">2位</option>
+                    <option value="three">3位</option>
+                    <option value="four">4位</option>
+                    <option value="five">5位</option>
+                </select>
+                <br>
+                <br>
+                <label for="date"><b>預約日期<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <br>
+                <label for="time"><b>預約時段(目前開放時段為09:00~16:00)<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="radio" class="time" name="time[]" value="0" required>09:00
+                    <input type="radio" class="time" name="time[]" value="1" required>10:00
+                    <input type="radio" class="time" name="time[]" value="2" required>11:00
+                    <input type="radio" class="time" name="time[]" value="3" required>13:00
+                    <input type="radio" class="time" name="time[]" value="4" required>14:00
+                    <input type="radio" class="time" name="time[]" value="5" required>15:00
+                    <input type="radio" class="time" name="time[]" value="6" required>16:00
+
+                <br>
+                <br>
+                <p><b>如有特殊需求，請來電告知，謝謝!</b></p>
+                <p>
+                    <spam style="color:red">* </spam>號為必填欄位
+                </p>
+                <br>
+                <div class="clearfix">
+                    <button onclick="success()" type="submit" class="reservebtn">確認預約</button>
+                    <button type="button" onclick="document.getElementById('reserve').style.display='none'"
+                        class="cancelbtn">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>豪板實業有限公司</p>
+        <p>台中市大雅區大林路181號</p>
+        <p>TEL 04-25654955</p>
+        <p>@2022 HAU BOARD. All Rights Reserved.</p>
+    </footer>
+
+
+    <script>
+        var modal = document.getElementById('reserve');
+
+        function success() {
+
+            var check = $("input[name='time[]']:checked").length;
+
+            var checkDate = $("#date").value;
+
+            if (resName.value != "" && mobile.value != "" && check != 0 && checkDate != "") {
+                alert("預約成功!");
+                return false;
+            }
+        }
+
+        var today = new Date();
+        var dd = today.getDate()+1;
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+
+    </script>
+
+
+
+
+</body>
+
+</html>

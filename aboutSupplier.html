@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>豪板-關於供應商</title>
+    <link rel="icon" href="img/HAUBOARD.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/aboutSupplier.css">
+    <script src="./JS/nav.js"></script>
+    <script type="text/javascript" src="./JS/jquery.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html"><label class="logo">HAU BOARD</label></a>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./aboutSupplier.html">供應商簡介</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">產品介紹
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./woodgrain.html">木紋系列</a>
+                        <a href="./texture.html">材質系列</a>
+                        <a href="./marmo.html">大理石系列</a>
+                        <a href="./plain.html">素色系列</a>
+                    </div>
+                </div>
+                <li><a href="./quality.html">品質標準</a></li>
+                <li><a href="./question.html">常見問題</a></li>
+                <li><a href="./contactUs.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+
+
+    <!-- 內容 -->
+    <section>
+        <div class="image-container">
+            <div class="picture_text">SUPPLIER</div>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="content">
+
+            <div class="text" style="flex:1.2">
+                <h3>關於供應商</h3>
+                <p>
+                    於1963年成立的Gruppo Mauro Saviola，開創了木材再生的可能性，利用回收木材再製成全新板材，賦予這些回收木材新的生命及其可能性，在追求經濟效益的同時
+                    以技術來換取符合自然生態的產品，回饋於地球。
+                </p>
+                <br>
+                <pre>
+✹ 相信企業文化實行是以人為本，沒有人才不會成功
+✹ 集團起源於Po valley，義大利境內資源豐富的地域
+✹ 秉持義大利本土生產，並要求產品及服務達國際水準
+✹ 投資產品的開法及研究，使品牌領先在創新設計</pre>
+                <br>
+                <p>
+                    "環境、人、土地、品質、創新"是Mauro Saviola承擔的社會責任。
+                    Mauro Saviola為第一所得到FSC(森林管理委員會)認證的生態板材工廠，也是目前世界產能第一的生態板工廠，公司的核心業務為粒片板製造，提供各系列產品，且完全符合所有規定的甲醛排放。
+                </p>
+            </div>
+
+            <div class="supplier" style="flex:1">
+
+                <div class="mark">
+                    <img src="../img/SAVIOLA-黑字.png" width="200px" id="saviola">
+                    <a href="https://www.saviola.com/eng/saviola/saviola-group/"><button class="button"><span>前往官網
+                            </span></button></a>
+                </div>
+
+                <div class="video">
+                    <iframe width="400" height="280" src="https://www.youtube.com/embed/51QXM7Ysx-g"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+    <div>
+        <a href="https://www.facebook.com/HauBoard1/"><img src="../img/fb.png" id="facebook"></a>
+    </div>
+    <!-- 預約 -->
+    <button id="resBtn" onclick="document.getElementById('reserve').style.display='block'"
+        style="width:auto;">預約參觀</button>
+
+
+    <div id="reserve" class="modal-formBox">
+
+        <form class="modal-form" action="#">
+
+            <div class="content-form">
+                <button class="closeForm"
+                    onclick="document.getElementById('reserve').style.display='none'">&times;</button>
+                <h2 style="text-align:center">預約參觀</h2>
+                <p style="text-align:center">請填寫以下預約資訊</p>
+                <hr>
+                <label for="resName"><b>姓名<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="resName" placeholder="您的大名" name="resName" required>
+
+                <label for="mobile"><b>電話<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="mobile" placeholder="您的電話" name="mobile" required>
+
+                <br>
+                <label for="people"><b>參觀人數</b></label>
+                <br>
+                <select name="people" id="people">
+                    <option value="one">1位</option>
+                    <option value="two">2位</option>
+                    <option value="three">3位</option>
+                    <option value="four">4位</option>
+                    <option value="five">5位</option>
+                </select>
+                <br>
+                <br>
+                <label for="date"><b>預約日期<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <br>
+                <label for="time"><b>預約時段(目前開放時段為09:00~16:00)<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="radio" class="time" name="time[]" value="0" required>09:00
+                <input type="radio" class="time" name="time[]" value="1" required>10:00
+                <input type="radio" class="time" name="time[]" value="2" required>11:00
+                <input type="radio" class="time" name="time[]" value="3" required>13:00
+                <input type="radio" class="time" name="time[]" value="4" required>14:00
+                <input type="radio" class="time" name="time[]" value="5" required>15:00
+                <input type="radio" class="time" name="time[]" value="6" required>16:00
+
+                <br>
+                <br>
+                <p><b>如有特殊需求，請來電告知，謝謝!</b></p>
+                <p>
+                    <spam style="color:red">* </spam>號為必填欄位
+                </p>
+                <br>
+                <div class="clearfix">
+                    <button onclick="success()" type="submit" class="reservebtn">確認預約</button>
+                    <button type="button" onclick="document.getElementById('reserve').style.display='none'"
+                        class="cancelbtn">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>豪板實業有限公司</p>
+        <p>台中市大雅區大林路181號</p>
+        <p>TEL 04-25654955</p>
+        <p>@2022 HAU BOARD. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function success() {
+
+            var check = $("input[name='time[]']:checked").length;
+
+            var checkDate = $("#date").value;
+
+            if (resName.value != "" && mobile.value != "" && check != 0 && checkDate != "") {
+                alert("預約成功!");
+                return false;
+            }
+        }
+
+        var today = new Date();
+        var dd = today.getDate() + 1;
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+    </script>
+
+</body>
+
+</html>

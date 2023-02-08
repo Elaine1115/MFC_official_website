@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>豪板-素色</title>
+    <link rel="icon" href="../img/HAUBOARD.gif" type="image/gif" sizes="16x16">
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/plain.css">
+    <script src="../JS/nav.js"></script>
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html"><label class="logo">HAU BOARD</label></a>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./aboutSupplier.html">供應商簡介</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">產品介紹
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./woodgrain.html">木紋系列</a>
+                        <a href="./texture.html">材質系列</a>
+                        <a href="./marmo.html">大理石系列</a>
+                        <a href="./plain.html">素色系列</a>
+                    </div>
+                </div>
+                <li><a href="./quality.html">品質標準</a></li>
+                <li><a href="./question.html">常見問題</a></li>
+                <li><a href="./contactUs.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- 次分類 -->
+    <div class="subtitle">
+        <h1 style="text-align: center;">素色系列</h1>
+
+        <a href="./woodgrain.html"><button class="button">木紋系列</button></a>
+        <a href="./texture.html"><button class="button">材質系列</button></a>
+        <a href="./marmo.html"><button class="button">大理石系列</button></a>
+        <a href="./plain.html"><button class="button">素色系列</button></a>
+    </div>
+
+    <!-- 圖片區 -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-3">
+                <img src="../img/products/plain/0K8-unimetallic metal.jpg" style="width: 100%"
+                    onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+                <br><br>
+                <p><b>0K8-unimetallic metal</b></p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../img/products/plain/797-grigio grafiti.jpg" style="width: 100%"
+                    onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                <br><br>
+                <p><b>797-grigio grafiti</b></p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../img/products/plain/AP2-grigio.jpg" style="width: 100%"
+                    onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                <br><br>
+                <p><b>AP2-grigio</b></p>
+            </div>
+            <div class="col-sm-3">
+                <img src="../img/products/plain/WD3-grigio.jpg" style="width: 100%"
+                    onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                <br><br>
+                <p><b>WD3-grigio</b></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="myModal" class="modal">
+        <span class="closure cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="../img/products/plain/0K8-unimetallic metal.jpg" style="width: 100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="../img/products/plain/797-grigio grafiti.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="../img/products/plain/AP2-grigio.jpg" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="../img/products/plain/WD3-grigio.jpg" style="width: 100%">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+
+
+            <div class="column">
+                <img class="demo cursor" src="../img/products/plain/0K8-unimetallic metal.jpg" onclick="currentSlide(1)"
+                    alt="0K8-unimetallic metal">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/products/plain/797-grigio grafiti.jpg" onclick="currentSlide(2)"
+                    alt="797-grigio grafiti">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/products/plain/AP2-grigio.jpg" onclick="currentSlide(3)"
+                    alt="AP2-grigio">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="../img/products/plain/WD3-grigio.jpg" onclick="currentSlide(4)"
+                    alt="WD3-grigio">
+            </div>
+        </div>
+    </div>
+
+    <!-- 預約 -->
+    <button id="resBtn" onclick="document.getElementById('reserve').style.display='block'"
+        style="width:auto;">預約參觀</button>
+
+
+    <div id="reserve" class="modal-formBox">
+        
+
+        <form class="modal-form" action="#">
+
+            <div class="content-form">
+                <button class="closeForm" onclick="document.getElementById('reserve').style.display='none'">&times;</button>
+                <h2 style="text-align:center">預約參觀</h2>
+                <p style="text-align:center">請填寫以下預約資訊</p>
+                <hr>
+                <label for="resName"><b>姓名<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="resName" placeholder="您的大名" name="resName" required>
+
+                <label for="mobile"><b>電話<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="mobile" placeholder="您的電話" name="mobile" required>
+
+                <br>
+                <label for="people"><b>參觀人數</b></label>
+                <br>
+                <select name="people" id="people">
+                    <option value="one">1位</option>
+                    <option value="two">2位</option>
+                    <option value="three">3位</option>
+                    <option value="four">4位</option>
+                    <option value="five">5位</option>
+                </select>
+                <br>
+                <br>
+                <label for="date"><b>預約日期<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <br>
+
+                <label for="time"><b>預約時段(目前開放時段為09:00~16:00)<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="radio" class="time" name="time[]" value="0" required>09:00
+                <input type="radio" class="time" name="time[]" value="1" required>10:00
+                <input type="radio" class="time" name="time[]" value="2" required>11:00
+                <input type="radio" class="time" name="time[]" value="3" required>13:00
+                <input type="radio" class="time" name="time[]" value="4" required>14:00
+                <input type="radio" class="time" name="time[]" value="5" required>15:00
+                <input type="radio" class="time" name="time[]" value="6" required>16:00
+
+                <br>
+                <br>
+                <p><b>如有特殊需求，請來電告知，謝謝!</b></p>
+                <p>
+                    <spam style="color:red">* </spam>號為必填欄位
+                </p>
+                <br>
+                <div class="clearfix">
+                    <button onclick="success()" type="submit" class="reservebtn">確認預約</button>
+                    <button type="button" onclick="document.getElementById('reserve').style.display='none'"
+                        class="cancelbtn">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+    <script>
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        function success() {
+
+            var check = $("input[name='time[]']:checked").length;
+
+            var checkDate = $("#date").value;
+
+            if (resName.value != "" && mobile.value != "" && check != 0 && checkDate != "") {
+                alert("預約成功!");
+                return false;
+            }
+        }
+
+        var today = new Date();
+        var dd = today.getDate()+1;
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+    </script>
+
+
+
+
+
+
+
+    <a href="https://www.facebook.com/HauBoard1/"><img src="../img/fb.png" id="facebook"></a>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <div>
+            <p>豪板實業有限公司</p>
+            <p>台中市大雅區大林路181號</p>
+            <p>TEL 04-25654955</p>
+            <p>@2022 HAU BOARD. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+</body>
+
+</html>

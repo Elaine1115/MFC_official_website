@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>豪板-品質標準</title>
+    <link rel="icon" href="../img/HAUBOARD.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/quality.css">
+    <script src="../JS/nav.js"></script>
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html"><label class="logo">HAU BOARD</label></a>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./aboutSupplier.html">供應商簡介</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">產品介紹
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./woodgrain.html">木紋系列</a>
+                        <a href="./texture.html">材質系列</a>
+                        <a href="./marmo.html">大理石系列</a>
+                        <a href="./plain.html">素色系列</a>
+                    </div>
+                </div>
+                <li><a href="./quality.html">品質標準</a></li>
+                <li><a href="./question.html">常見問題</a></li>
+                <li><a href="./contactUs.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+
+    <div class="image-container">
+        <div class="picture_text">QUALITY</div>
+    </div>
+
+    <br>
+    <h1 style="text-align:center">產 品 認 證</h1>
+    <div class="sepline">
+        <hr>
+    </div>
+    <br>
+    <!-- 圖片區 -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                <img class="image" src="../img/quality/110年甲醛測報.jpg" alt="甲醛測試報告" style="width:100%; ">
+
+                <p>甲醛測試報告</p>
+                <div class="download">
+                    <a href="../img/quality/110年甲醛測報.jpg" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <img class="image" src="../img/quality/110年防潮測報.jpg" alt="防潮測試報告" style="width:100%;">
+
+                <p>防潮測試報告</p>
+                <div class="download">
+                    <a href="../img/quality/110年防潮測報.jpg" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <img class="image" src="../img/quality/110年防焰測報.jpg" alt="防焰測試報告" style="width:100%;">
+
+                <p>防焰測試報告</p>
+                <div class="download">
+                    <a href="../img/quality/110年防焰測報.jpg" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+
+            </div>
+
+            <div class="col">
+                <img class="image" src="../img/quality/FSC-1-2024.11.25.jpg" alt="FSC-森林管理委員會認證" style="width:100%;">
+                <p>FSC-森林管理委員會認證</p>
+                <div class="download">
+                    <a href="../img/quality/FSC-2024.11.25.pdf" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <img class="image" src="../img/quality/PEFC-2021.12.21.jpg" alt="PEFC-森林認證計畫委員會" style="width:100%;">
+                <p>PEFC-森林認證計畫委員會</p>
+                <div class="download">
+                    <a href="../img/quality/PEFC2021.12.21.pdf" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+            </div>
+
+            <div class="col">
+                <img class="image" src="../img/quality/IQNet(CISQ)-2020.07.15.jpg" alt="IQNet-國際認證聯盟" style="width:100%;">
+                <p>IQNet-國際認證聯盟</p>
+                <div class="download">
+                    <a href="../img/quality/IQNet(CISQ)2020.07.15.pdf" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+            </div>
+
+            <div class="col">
+                <img class="image" src="../img/quality/CATAS-4stars-2023.12.31.jpg" alt="CATAS認證-4 STARS" style="width:100%;">
+                <p>CATAS認證-4 STARS</p>
+                <div class="download">
+                    <a href="../img/quality/CATAS-4stars-2023.12.31.pdf" download><button class="downloadBtn"><i
+                                class="fa fa-download"></i>下載</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 大圖 The Modal -->
+        <div id="myModal" class="modal">
+            <span class="closure">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+
+
+
+    <div>
+        <a href="https://www.facebook.com/HauBoard1/"><img src="../img/fb.png" id="facebook"></a>
+    </div>
+
+    <!-- 預約 -->
+    <button id="resBtn" onclick="document.getElementById('reserve').style.display='block'"
+        style="width:auto;">預約參觀</button>
+
+
+    <div id="reserve" class="modal-formBox">
+
+        <form class="modal-form" action="#">
+
+            <div class="content-form">
+                <button class="closeForm" onclick="document.getElementById('reserve').style.display='none'">&times;</button>
+                <h2 style="text-align:center">預約參觀</h2>
+                <p style="text-align:center">請填寫以下預約資訊</p>
+                <hr>
+                <label for="resName"><b>姓名<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="resName" placeholder="您的大名" name="resName" required>
+
+                <label for="mobile"><b>電話<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="mobile" placeholder="您的電話" name="mobile" required>
+
+                <br>
+                <label for="people"><b>參觀人數</b></label>
+                <br>
+                <select name="people" id="people">
+                    <option value="one">1位</option>
+                    <option value="two">2位</option>
+                    <option value="three">3位</option>
+                    <option value="four">4位</option>
+                    <option value="five">5位</option>
+                </select>
+                <br>
+                <br>
+                <label for="date"><b>預約日期<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <br>
+
+                <label for="time"><b>預約時段(目前開放時段為09:00~16:00)<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="radio" class="time" name="time[]" value="0" required>09:00
+                <input type="radio" class="time" name="time[]" value="1" required>10:00
+                <input type="radio" class="time" name="time[]" value="2" required>11:00
+                <input type="radio" class="time" name="time[]" value="3" required>13:00
+                <input type="radio" class="time" name="time[]" value="4" required>14:00
+                <input type="radio" class="time" name="time[]" value="5" required>15:00
+                <input type="radio" class="time" name="time[]" value="6" required>16:00
+
+                <br>
+                <br>
+                <p><b>如有特殊需求，請來電告知，謝謝!</b></p>
+                <p>
+                    <spam style="color:red">* </spam>號為必填欄位
+                </p>
+                <br>
+                <div class="clearfix">
+                    <button onclick="success()" type="submit" class="reservebtn">確認預約</button>
+                    <button type="button" onclick="document.getElementById('reserve').style.display='none'"
+                        class="cancelbtn">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // 將圖片class存入陣列
+        var myImage = document.getElementsByClassName("image");
+
+        // 依據選取的陣列位置放大圖片
+        myImage[0].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        myImage[1].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        myImage[2].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        myImage[3].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        myImage[4].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        myImage[5].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        myImage[6].onclick = function () {
+            myModal.style.display = "block";
+            img01.src = this.src;
+            caption.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("closure")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            myModal.style.display = "none";
+        }
+
+
+        var modal = document.getElementById('reserve');
+
+        function success() {
+
+            var check = $("input[name='time[]']:checked").length;
+
+            var checkDate = $("#date").value;
+
+            if (resName.value != "" && mobile.value != "" && check != 0 && checkDate != "") {
+                alert("預約成功!");
+                return false;
+            }
+        }
+
+        var today = new Date();
+        var dd = today.getDate()+1;
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+
+    </script>
+
+
+
+
+    <footer>
+        <div>
+            <p>豪板實業有限公司</p>
+            <p>台中市大雅區大林路181號</p>
+            <p>TEL 04-25654955</p>
+            <p>@2022 HAU BOARD. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

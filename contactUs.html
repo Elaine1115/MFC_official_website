@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>豪板-聯繫我們</title>
+    <link rel="icon" href="../img/HAUBOARD.gif" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/contactUs.css">
+    <script src="../JS/nav.js"></script>
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./index.html"><label class="logo">HAU BOARD</label></a>
+            <ul>
+                <li><a href="./aboutUs.html">關於我們</a></li>
+                <li><a href="./news.html">最新消息</a></li>
+                <li><a href="./aboutSupplier.html">供應商簡介</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">產品介紹
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="./woodgrain.html">木紋系列</a>
+                        <a href="./texture.html">材質系列</a>
+                        <a href="./marmo.html">大理石系列</a>
+                        <a href="./plain.html">素色系列</a>
+                    </div>
+                </div>
+                <li><a href="./quality.html">品質標準</a></li>
+                <li><a href="./question.html">常見問題</a></li>
+                <li><a href="./contactUs.html">聯繫我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <section>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="image-container">
+            <div class="text">CONTACT</div>
+        </div>
+
+        <br>
+        <br>
+        <div class="container">
+            <div class="form-container">
+                <form id="form01" action="#">
+                    <label for="name">姓名 Name<spam style="color:red; font-size: 16px;"> *</spam></label>
+                    <input type="text" id="name" name="name" placeholder="您的大名..">
+
+                    <br>
+                    <label for="gender">性別 Gender</label>
+                    <select id="gender" name="gender">
+                        <option value="male">男 Male</option>
+                        <option value="female">女 Female</option>
+                    </select>
+                    <br>
+                    <label for="phone">電話 Phone<spam style="color:red; font-size: 16px;"> *</spam></label>
+                    <input type="tel" id="phone" name="phone" placeholder="您的電話..">
+                    <br>
+                    <label for="mail">信箱 Email</label>
+                    <input type="email" id="mail" name="mail" placeholder="您的信箱..">
+                    <br>
+                    <label for="source">如何得知我們 How to know us</label>
+                    <input list="relatedsource" name="source" id="source" placeholder="家人朋友介紹..">
+                    <br>
+                    <datalist id="relatedsource">
+                        <option value="家人朋友介紹">
+                        <option value="系統加工廠介紹">
+                        <option value="廚具公司介紹">
+                        <option value="報章雜誌得知">
+                    </datalist>
+                    <label for="subject">意見 Opinion<spam style="color:red; font-size: 16px;"> *</spam></label>
+                    <textarea id="subject" name="subject" placeholder="說些什麼.." style="height:200px"></textarea>
+                    <p style="float:right;">
+                        <spam style="color:red; font-size: 18px;">* </spam>號為必填欄位
+                    </p>
+                    <br>
+                    <input id="button" type="submit" value="提交">
+
+                </form>
+
+            </div>
+
+
+            <div class="googlemaps">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3638.09482303508!2d120.64379661438818!3d24.23846207587417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346916ea98f86d1b%3A0x3785f23d759b614f!2z6LGq5p2_5a-m5qWt5pyJ6ZmQ5YWs5Y-4!5e0!3m2!1szh-TW!2stw!4v1664116973805!5m2!1szh-TW!2stw"
+                    width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+
+
+    </section>
+
+    <div>
+        <a href="https://www.facebook.com/HauBoard1/"><img src="../img/fb.png" id="facebook"></a>
+    </div>
+
+
+    <!-- 預約 -->
+    <button id="resBtn" onclick="document.getElementById('reserve').style.display='block'"
+        style="width:auto;">預約參觀</button>
+
+
+    <div id="reserve" class="modal-formBox">
+
+        <form class="modal-form" action="">
+
+            <div class="content-form">
+                <button class="closeForm"
+                    onclick="document.getElementById('reserve').style.display='none'">&times;</button>
+                <h2 style="text-align:center">預約參觀</h2>
+                <p style="text-align:center">請填寫以下預約資訊</p>
+                <hr>
+                <label for="resName"><b>姓名<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="resName" placeholder="您的大名" name="resName" required>
+
+                <label for="mobile"><b>電話<spam style="color:red"> *</spam></b></label>
+                <input type="text" id="mobile" placeholder="您的電話" name="mobile" required>
+
+                <br>
+                <label for="people"><b>參觀人數</b></label>
+                <br>
+                <select name="people" id="people">
+                    <option value="one">1位</option>
+                    <option value="two">2位</option>
+                    <option value="three">3位</option>
+                    <option value="four">4位</option>
+                    <option value="five">5位</option>
+                </select>
+                <br>
+                <br>
+                <label for="date"><b>預約日期<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="date" id="date" name="date" required>
+                <br>
+                <br>
+                <label for="time"><b>預約時段(目前開放時段為09:00~16:00)<spam style="color:red"> *</spam></b></label>
+                <br>
+                <input type="radio" class="time" name="time[]" value="0" required>09:00
+                <input type="radio" class="time" name="time[]" value="1" required>10:00
+                <input type="radio" class="time" name="time[]" value="2" required>11:00
+                <input type="radio" class="time" name="time[]" value="3" required>13:00
+                <input type="radio" class="time" name="time[]" value="4" required>14:00
+                <input type="radio" class="time" name="time[]" value="5" required>15:00
+                <input type="radio" class="time" name="time[]" value="6" required>16:00
+
+                <br>
+                <br>
+                <p><b>如有特殊需求，請來電告知，謝謝!</b></p>
+                <p>
+                    <spam style="color:red">* </spam>號為必填欄位
+                </p>
+                <br>
+                <div class="clearfix">
+                    <button onclick="success()" type="submit" class="reservebtn">確認預約</button>
+                    <button type="button" onclick="document.getElementById('reserve').style.display='none'"
+                        class="resCancelBtn">取消</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p>豪板實業有限公司</p>
+        <p>台中市大雅區大林路181號</p>
+        <p>TEL 04-25654955</p>
+        <p>@2022 HAU BOARD. All Rights Reserved.</p>
+    </footer>
+
+
+
+    <script>
+        $(function () {
+
+            var $form = $("#form01");
+
+            $form.validate({
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    phone: {
+                        required: true
+                    },
+                    subject: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: '請輸入您的姓名'
+                    },
+                    phone: {
+                        required: '請輸入您的電話'
+                    },
+                    subject: {
+                        required: '請輸入意見內容'
+                    }
+                },
+                success: "valid",
+                submitHandler: function () { 
+                    alert("感謝您的意見!!");  
+                    validate.resetForm();
+                }
+            })
+            
+
+        })
+
+
+        function success() {
+
+            var check = $("input[name='time[]']:checked").length;
+
+            var checkDate = $("#date").value;
+
+            if (resName.value != "" && mobile.value != "" && check != 0 && checkDate != "") {
+                alert("預約成功!");
+                return true;
+            }
+        }
+
+        var today = new Date();
+        var dd = today.getDate() + 1;
+        var mm = today.getMonth() + 1;
+        var yyyy = today.getFullYear();
+        if (dd < 10) {
+            dd = '0' + dd
+        }
+        if (mm < 10) {
+            mm = '0' + mm
+        }
+
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById("date").setAttribute("min", today);
+    </script>
+
+
+
+
+</body>
+
+</html>
